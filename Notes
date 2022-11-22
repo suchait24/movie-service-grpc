@@ -1,0 +1,43 @@
+suchaitgaurav@Suchaits-MacBook-Pro ~ % grpcurl --plaintext -d '{"offset":1,"count":4,"movieIds": [12,13,14,15,16]}' localhost:9090 MovieService/getMovies
+{
+  "offset": 1,
+  "count": 4,
+  "movies": [
+    {
+      "movieId": 12,
+      "Name": "movie-1",
+      "director": "director-1",
+      "actors": [
+        "actor-1",
+        "actor-2"
+      ]
+    },
+    {
+      "movieId": 13,
+      "Name": "movie-2",
+      "director": "director-2",
+      "actors": [
+        "actor-1",
+        "actor-2"
+      ]
+    },
+    {
+      "movieId": 14,
+      "Name": "movie-3",
+      "director": "director-3",
+      "actors": [
+        "actor-1",
+        "actor-2"
+      ]
+    },
+    {
+      "movieId": 15,
+      "Name": "movie-4",
+      "director": "director-4",
+      "actors": [
+        "actor-1",
+        "actor-2"
+      ]
+    }
+  ]
+}

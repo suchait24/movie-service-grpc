@@ -1,0 +1,10 @@
+syntax = "proto3";
+import "Movie.proto";
+option java_multiple_files = true;
+option java_package = "com.grpc.demo.models";
+
+message MovieResponse {
+  int32 offset = 1;
+  int32 count = 2;
+  repeated Movie movies = 3;
+}

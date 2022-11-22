@@ -1,0 +1,11 @@
+syntax = "proto3";
+option java_multiple_files = true;
+option java_package = "com.grpc.demo.models";
+
+message Movie {
+  int32 movieId = 1;
+  string Name = 2;
+  string year = 3;
+  string director = 4;
+  repeated string actors = 5;
+}
